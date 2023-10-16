@@ -1,5 +1,5 @@
 
-numberofdays = int(input("numbberof days temperature?:"))
+numberofdays = int(input("numbber of days temperature?:"))
 total = 0
 samplearray = []
 for number in range (numberofdays):
