@@ -26,14 +26,14 @@ def maximum_product(sample_array):
 
 print(maximum_product(sample_array))
 
-# return the list without first and last elemets 
+# 3)return the list without first and last elemets 
 def middle(lst):
     return lst[1:-1]
     
 myList = [1,2,3,4]
 print(middle(myList))
 
-# find the sum of the diagonal elements in the 2D array
+# 4)find the sum of the diagonal elements in the 2D array
 
 def diagonal_sum(matrix):
     sum = 0
