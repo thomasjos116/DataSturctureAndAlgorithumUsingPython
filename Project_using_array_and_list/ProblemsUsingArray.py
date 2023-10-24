@@ -26,3 +26,10 @@ def maximum_product(sample_array):
 
 print(maximum_product(sample_array))
 
+# return the list without first and middle elemets 
+def middle(lst):
+    return lst[1:-1]
+    
+myList = [1,2,3,4]
+print(middle(myList))
+
