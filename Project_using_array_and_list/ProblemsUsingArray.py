@@ -43,3 +43,18 @@ def diagonal_sum(matrix):
     
 myList2D= [[1,2,3],[4,5,6],[7,8,9]] 
 diagonal_sum(myList2D)
+
+# 5)find the best two values from the list :
+
+
+def first_second(my_list):
+    max1,max2 = float('-inf'),float('-inf')
+    for num in my_list:
+        if num > max1:
+            max2 =max1
+            max1 = num
+        elif num > max2 and num != max1 :        
+            max2 = num
+    return max1, max2
+my_list = [84, 85, 86, 87, 85, 90, 85, 83, 23, 45, 84, 1, 2, 0]
+print(first_second(my_list))
