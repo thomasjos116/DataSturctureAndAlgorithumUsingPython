@@ -58,3 +58,13 @@ def first_second(my_list):
     return max1, max2
 my_list = [84, 85, 86, 87, 85, 90, 85, 83, 23, 45, 84, 1, 2, 0]
 print(first_second(my_list))
+
+#6) find the missing number in the list
+
+def missing_number(arr, n):
+    total = n * (n + 1) // 2
+    sum_arr = sum(arr)
+    missing = total - sum_arr
+    return missing
+
+print(missing_number([1, 2, 3, 4, 6], 6))
