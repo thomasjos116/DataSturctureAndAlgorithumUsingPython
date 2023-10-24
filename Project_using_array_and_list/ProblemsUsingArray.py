@@ -1,5 +1,18 @@
 # How  to check the number that conatins in the array or not 
 
+import numpy as np
+
+sample_array = np.array([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
+
+def find_number(array, number):
+    for i in range(len(array)):
+        if array[i] == number:
+            print(i)
+
+find_number(sample_array, 20)
+
+
+# 2)max poroduct of two integers in the array 
 
 def maximum_product(sample_array):
     max1,max2 = 0,0
@@ -10,8 +23,6 @@ def maximum_product(sample_array):
         elif num > max2:
             max2 = num
     return max1 * max2
-arr = [10,12,3, 5, 17, 3, 21]
 
-print(maximum_product(arr))
-
+print(maximum_product(sample_array))
 
