@@ -105,3 +105,17 @@ def contains_duplicate(nums):
             return True
         seen.add(num)
     return False
+ # 10) permuation 
+def permuation(List1, List2):
+    if len(List1) != len(List2):
+        return False
+    List1.sort()
+    List2.sort()
+    if List1 == List2:
+        return True
+    else:
+        return False
+            
+List1 = ['a','b','c']
+List2 = ['b','c','a']
+print(permuation(List1,List2))
